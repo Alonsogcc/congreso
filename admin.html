@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow">
+<title>Panel del Comité · Congreso de Alonsología</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2064%2064%22%3E%3Crect%20width%3D%2264%22%20height%3D%2264%22%20rx%3D%2212%22%20fill%3D%22%2313254a%22/%3E%3Ccircle%20cx%3D%2232%22%20cy%3D%2236%22%20r%3D%2213%22%20fill%3D%22%23e9c46a%22/%3E%3Cellipse%20cx%3D%2232%22%20cy%3D%2224.5%22%20rx%3D%228%22%20ry%3D%222.6%22%20fill%3D%22%2313254a%22/%3E%3Cpath%20d%3D%22M35%2024%20L41%2011%20L47%209%22%20stroke%3D%22%23e9c46a%22%20stroke-width%3D%223%22%20fill%3D%22none%22%20stroke-linecap%3D%22round%22/%3E%3Cpath%20d%3D%22M29%2024%20L20%2012%22%20stroke%3D%22%23e9c46a%22%20stroke-width%3D%222%22/%3E%3Cpath%20d%3D%22M9%2014%20Q20%202%2031%2013Z%22%20fill%3D%22%23e9c46a%22/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700;900&family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Inter:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f3ede1;--navy:#13254a;--gd:#9a7020;--g3:#b8862b;--mute:#6f6a5e;--ok:#2e7d4f;--warn:#a86b12;--no:#a3121f;
+  --cinzel:"Cinzel",Georgia,serif;--serif:"Cormorant Garamond",Georgia,serif;--sans:Inter,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+body{margin:0;min-height:100vh;color:var(--navy);font-family:var(--sans);
+  background:repeating-linear-gradient(0deg,#13254a07 0 1px,transparent 1px 3px),repeating-linear-gradient(90deg,#13254a06 0 1px,transparent 1px 3px),radial-gradient(120% 80% at 50% 0%,#fcf9f2,#f3ede1 60%,#e9e0cd) fixed}
+.wrap{max-width:720px;margin:0 auto;padding:max(20px,env(safe-area-inset-top)) 16px 40px}
+.eyebrow{font:700 10px var(--cinzel);letter-spacing:.36em;text-transform:uppercase;color:var(--gd)}
+h1{font:900 clamp(22px,6vw,30px)/1.1 var(--cinzel);margin:6px 0 2px}
+.sub{font:italic 500 16px var(--serif);color:var(--mute);margin:0}
+.card{background:#fffdf8;border:1px solid #13254a1f;box-shadow:0 6px 20px #13254a12;padding:16px;margin-top:14px}
+.btn{font:700 11px var(--cinzel);letter-spacing:.16em;text-transform:uppercase;padding:12px 16px;border:0;cursor:pointer;color:#1b1203;
+  background:linear-gradient(100deg,#8a6416,#c9972c 30%,#f6d88a 50%,#c9972c 70%,#8a6416);box-shadow:0 0 0 1px #8a6416}
+.btn.navy{background:var(--navy);color:#f6d88a;box-shadow:none}
+.btn.ghost{background:transparent;color:var(--navy);box-shadow:inset 0 0 0 1px #13254a55}
+.btn.small{padding:8px 10px;font-size:9.5px}
+.btn:disabled{opacity:.4}
+input{font:500 16px var(--sans);padding:12px;border:1px solid #13254a40;background:#fff;width:100%;color:var(--navy)}
+.row{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-top:14px}
+.stat{background:var(--navy);color:#f3ede1;padding:12px 8px;text-align:center}
+.stat b{display:block;font:900 26px var(--cinzel);color:#f6d88a}
+.stat span{font:600 10px var(--sans);letter-spacing:.08em;text-transform:uppercase;opacity:.8}
+.vote{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}
+.vote h3{font:700 14px var(--cinzel);letter-spacing:.12em;margin:0}
+.vote p{margin:4px 0 0;font:500 15px var(--serif);color:var(--mute)}
+.pill{display:inline-block;font:700 10px var(--sans);letter-spacing:.06em;padding:4px 8px;border-radius:99px;text-transform:uppercase}
+.pill.yes{background:#2e7d4f1a;color:var(--ok)}.pill.maybe{background:#a86b121f;color:var(--warn)}.pill.none{background:#13254a12;color:var(--mute)}.pill.no{background:#a3121f17;color:var(--no)}
+.g{border-top:1px solid #13254a14;padding:12px 0;display:grid;grid-template-columns:1fr auto;gap:6px 10px}
+.g:first-child{border-top:0}
+.g .nm{font:700 17px var(--serif)}
+.g .meta{font:500 12px var(--sans);color:var(--mute);grid-column:1/-1;display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+.g .acts{grid-column:1/-1;display:flex;gap:6px;flex-wrap:wrap}
+.seg{display:inline-flex;border:1px solid #13254a33}
+.seg button{font:600 11px var(--sans);border:0;background:transparent;color:var(--navy);padding:6px 9px;cursor:pointer}
+.seg button.on{background:var(--navy);color:#f6d88a}
+.res h4{font:700 15px var(--serif);margin:14px 0 6px}
+.bar{display:grid;grid-template-columns:130px 1fr 28px;gap:8px;align-items:center;font:500 13px var(--sans);margin:4px 0}
+.bar i{display:block;height:10px;background:linear-gradient(90deg,#b8862b,#e9c46a)}
+#modal{position:fixed;inset:0;background:#13254acc;display:none;align-items:center;justify-content:center;padding:20px;z-index:50}
+#modal.on{display:flex}
+#modal .card{max-width:380px;text-align:center}
+#toast{position:fixed;left:50%;bottom:20px;transform:translateX(-50%) translateY(20px);background:var(--navy);color:#f3ede1;border:1px solid #c9972c;padding:10px 16px;font:500 14px var(--sans);opacity:0;transition:.3s;pointer-events:none;z-index:60;max-width:92vw;text-align:center}
+#toast.on{opacity:1;transform:translateX(-50%)}
+.hide{display:none!important}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="eyebrow">Uso exclusivo del Comité Científico</div>
+  <h1>Panel del Presidente</h1>
+  <p class="sub">1er Congreso Internacional de Alonsología · Cartagena MMXXVII</p>
+
+  <div class="card" id="login">
+    <div class="eyebrow" style="margin-bottom:8px">Clave del Comité</div>
+    <div class="row"><input id="key" type="password" autocomplete="current-password" placeholder="Escribe tu clave"><button class="btn" id="enter" style="width:100%">Entrar</button></div>
+    <p class="sub" id="loginMsg" style="margin-top:8px;font-size:14px"></p>
+  </div>
+
+  <div id="app" class="hide">
+    <div class="stats">
+      <div class="stat"><b id="sYes">0</b><span>Confirmados</span></div>
+      <div class="stat"><b id="sMaybe">0</b><span>Lo consultan</span></div>
+      <div class="stat"><b id="sNone">0</b><span>Sin respuesta</span></div>
+      <div class="stat"><b id="sOpen">0</b><span>Ya la abrieron</span></div>
+    </div>
+
+    <div class="card vote">
+      <div><h3>Urna de Reconocimientos</h3><p id="vState"></p></div>
+      <button class="btn" id="vToggle"></button>
+    </div>
+
+    <div class="card">
+      <div class="row" style="justify-content:space-between">
+        <div class="eyebrow">Ponentes</div>
+        <div class="row"><button class="btn ghost small" id="copyAll">Copiar todos los links</button><button class="btn ghost small" id="refresh">Actualizar</button></div>
+      </div>
+      <p class="sub" style="font-size:14px;margin-top:6px">“Nominado” decide quién aparece en la boleta. En <b>Auto</b> aparece quien confirmó asistencia.</p>
+      <div id="list"></div>
+    </div>
+
+    <div class="card">
+      <div class="row" style="justify-content:space-between"><div class="eyebrow">Resultados</div><button class="btn ghost small" id="showRes">Ver resultados</button></div>
+      <div id="res" class="res hide"></div>
+    </div>
+    <p class="sub" style="text-align:center;margin-top:18px;font-size:14px"><a href="#" id="logout" style="color:var(--mute)">Cerrar sesión</a></p>
+  </div>
+</div>
+
+<div id="modal"><div class="card"><div class="eyebrow" id="mEye"></div><p class="sub" id="mMsg" style="margin:10px 0 16px;font-size:17px;color:var(--navy)"></p>
+  <div class="row" style="justify-content:center"><button class="btn ghost" id="mNo">Cancelar</button><button class="btn" id="mYes">Confirmar</button></div></div></div>
+<div id="toast"></div>
+
+<script>
+(function(){
+"use strict";
+const SB_URL="https://ahhfrbhhltuevjlmfvcj.supabase.co",SB_KEY="sb_publishable_qqTrah1aha0BRAD4STWdsw_xXRtBeOH";
+const BASE=location.origin+location.pathname.replace(/admin\.html$/,"");
+const AWARDS=["Doctorado Honoris Causa en Resistencia Tropical","Premio Nobel de la Hidratación","Beca de Investigación “Desaparición Misteriosa”","Cátedra Magistral de Negociación Callejera","Mención Honorífica al “Síndrome del Camarón”","Premio a la Mejor Tesis de Improvisación"];
+const $=s=>document.querySelector(s);
+let KEY="",DATA=null;
+async function rpc(fn,args){const r=await fetch(SB_URL+"/rest/v1/rpc/"+fn,{method:"POST",headers:{apikey:SB_KEY,Authorization:"Bearer "+SB_KEY,"Content-Type":"application/json"},body:JSON.stringify(args)});if(!r.ok)throw new Error(r.status);return r.json()}
+function toast(m){const t=$("#toast");t.textContent=m;t.classList.add("on");clearTimeout(toast._t);toast._t=setTimeout(()=>t.classList.remove("on"),2400)}
+function ask(eye,msg){return new Promise(res=>{$("#mEye").textContent=eye;$("#mMsg").textContent=msg;$("#modal").classList.add("on");
+  $("#mYes").onclick=()=>{$("#modal").classList.remove("on");res(true)};$("#mNo").onclick=()=>{$("#modal").classList.remove("on");res(false)}})}
+async function copy(t){try{await navigator.clipboard.writeText(t);toast("Copiado")}catch(e){const a=document.createElement("textarea");a.value=t;document.body.appendChild(a);a.select();try{document.execCommand("copy");toast("Copiado")}catch(_){toast("No se pudo copiar")}a.remove()}}
+const link=g=>BASE+"#"+g.slug+"-"+g.code;
+function msg(g){const t=g.g==="a"?"Dra.":"Dr.",e=g.g==="a"?"Estimada":"Estimado",f=g.name.split(" ")[0];
+  return `${e} ${t} ${f}:\n\nEl Comité Científico tiene el honor de hacerle llegar su convocatoria oficial al 1er Congreso Internacional de Alonsología. 🎓🥥\n\n${link(g)}\n\nDocumento personal e intransferible.`}
+function ago(iso){if(!iso)return"";const m=Math.round((Date.now()-new Date(iso))/6e4);if(m<1)return"hace un momento";if(m<60)return`hace ${m} min`;const h=Math.round(m/60);if(h<24)return`hace ${h} h`;return`hace ${Math.round(h/24)} d`}
+
+async function load(){
+  let d;try{d=await rpc("cia_admin",{p_key:KEY})}catch(e){toast("Sin conexión");return false}
+  if(!d)return false;DATA=d;render();return true;
+}
+function render(){
+  const G=DATA.guests;
+  $("#sYes").textContent=G.filter(g=>g.rsvp==="yes").length;
+  $("#sMaybe").textContent=G.filter(g=>g.rsvp==="maybe").length;
+  $("#sNone").textContent=G.filter(g=>!g.rsvp).length;
+  $("#sOpen").textContent=G.filter(g=>g.opens>0).length;
+  $("#vState").textContent=DATA.voting_open?"Abierta: los ponentes ya pueden votar.":"Cerrada. Ábrela al regresar de Cartagena.";
+  $("#vToggle").textContent=DATA.voting_open?"Cerrar votación":"Abrir votación";
+  $("#vToggle").className=DATA.voting_open?"btn navy":"btn";
+  const L=$("#list");L.innerHTML="";
+  G.forEach(g=>{
+    const st=g.rsvp==="yes"?["yes","Confirmó"]:g.rsvp==="maybe"?["maybe","Lo consulta"]:g.rsvp==="no"?["no","No va"]:["none","Sin respuesta"];
+    const nomOn=g.asiste===null||g.asiste===undefined?"auto":g.asiste?"si":"no";
+    const el=document.createElement("div");el.className="g";
+    el.innerHTML=`<div class="nm">${g.g==="a"?"Dra.":"Dr."} ${g.name}</div><div><span class="pill ${st[0]}">${st[1]}</span></div>
+      <div class="meta"><span>${g.opens?`👁 Abierta ${g.opens} ${g.opens===1?"vez":"veces"} · ${ago(g.last_open)}`:"👁 Aún no la abre"}</span><span>🗳 ${g.votes}/6 votos</span>
+        <span>Nominado: <span class="seg">${[["auto","Auto"],["si","Sí"],["no","No"]].map(([v,l])=>`<button data-v="${v}" class="${nomOn===v?"on":""}">${l}</button>`).join("")}</span></span></div>
+      <div class="acts"><button class="btn small" data-a="wa">Enviar por WhatsApp</button><button class="btn ghost small" data-a="msg">Copiar mensaje</button><button class="btn ghost small" data-a="link">Copiar link</button></div>`;
+    el.querySelector('[data-a="link"]').onclick=()=>copy(link(g));
+    el.querySelector('[data-a="msg"]').onclick=()=>copy(msg(g));
+    el.querySelector('[data-a="wa"]').onclick=()=>{location.href="https://wa.me/?text="+encodeURIComponent(msg(g))};
+    el.querySelectorAll(".seg button").forEach(b=>b.onclick=async()=>{
+      const v=b.dataset.v==="auto"?null:b.dataset.v==="si";
+      try{await rpc("cia_admin_asiste",{p_key:KEY,p_slug:g.slug,p_val:v});g.asiste=v;render()}catch(e){toast("No se pudo guardar")}
+    });
+    L.appendChild(el);
+  });
+  if(!$("#res").classList.contains("hide"))renderRes();
+}
+function renderRes(){
+  const R=DATA.results||[],names=Object.fromEntries(DATA.guests.map(g=>[g.slug,g.name]));
+  $("#res").innerHTML=AWARDS.map((a,i)=>{const rows=R.filter(r=>r.award===i).sort((x,y)=>y.n-x.n);const max=rows[0]?rows[0].n:1;
+    return `<h4>${a}</h4>`+(rows.length?rows.map((r,k)=>`<div class="bar"><span>${k===0?"🏆 ":""}${names[r.nominee]||r.nominee}</span><i style="width:${r.n/max*100}%"></i><b>${r.n}</b></div>`).join(""):`<p class="sub" style="font-size:14px">Sin votos todavía.</p>`)}).join("");
+}
+$("#showRes").onclick=async()=>{const r=$("#res");if(r.classList.contains("hide")){if(!await ask("Resultados","¿Ver los resultados? Mejor mantenlos en secreto hasta la ceremonia."))return;r.classList.remove("hide");renderRes();$("#showRes").textContent="Ocultar"}else{r.classList.add("hide");$("#showRes").textContent="Ver resultados"}};
+$("#vToggle").onclick=async()=>{
+  const open=!DATA.voting_open;
+  if(!await ask(open?"Abrir votación":"Cerrar votación",open?"Todos los ponentes verán la boleta en su invitación y podrán votar.":"Los ponentes ya no podrán votar ni cambiar sus votos."))return;
+  try{const ok=await rpc("cia_admin_voting",{p_key:KEY,p_open:open});if(!ok)throw 0;DATA.voting_open=open;render();toast(open?"Votación abierta":"Votación cerrada")}catch(e){toast("No se pudo cambiar")}
+};
+$("#refresh").onclick=async()=>{if(await load())toast("Actualizado")};
+$("#copyAll").onclick=()=>copy(DATA.guests.map(g=>`${g.name}: ${link(g)}`).join("\n"));
+async function enter(k){
+  KEY=k;$("#loginMsg").textContent="Verificando…";
+  if(await load()){try{localStorage.setItem("cia-key",k)}catch(e){}$("#login").classList.add("hide");$("#app").classList.remove("hide")}
+  else{$("#loginMsg").textContent="Clave incorrecta.";try{localStorage.removeItem("cia-key")}catch(e){}}
+}
+$("#enter").onclick=()=>enter($("#key").value.trim());
+$("#key").addEventListener("keydown",e=>{if(e.key==="Enter")enter($("#key").value.trim())});
+$("#logout").onclick=e=>{e.preventDefault();try{localStorage.removeItem("cia-key")}catch(_){}location.reload()};
+try{const k=localStorage.getItem("cia-key");if(k)enter(k)}catch(e){}
+})();
+</script>
+</body>
+</html>
